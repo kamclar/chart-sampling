@@ -1,1 +1,1 @@
-web: bokeh serve --port=$PORT --allow-websocket-origin=chart-sampling.herokuapp.com --address=0.0.0.0 --use-xheaders bokeh-sliders.py
+web: bokeh serve --port=$PORT --allow-websocket-origin=chart-sampling.herokuapp.com --address=0.0.0.0 --use-xheaders app.py
