@@ -8,6 +8,7 @@ at your command prompt. Then navigate to the URL
     http://localhost:5006/sliders
 in your browser.
 '''
+from math import sqrt
 import numpy as np
 from statistics import mean, stdev
 from bokeh.io import curdoc
@@ -40,7 +41,7 @@ x_bar, y_bar = [], []
 for i in range(5):
     sampling = np.random.choice(s, N_array[i])
     mean_array.append(mean(sampling))
-    sem_array.append(stdev(sampling))
+    sem_array.append(stdev(sampling)/sqrt(N_array[i]))
     x_bar.append(i+1)
     y_bar.append(mean_array[i])
     x.append([i + 1, i + 1])
@@ -86,7 +87,7 @@ def update_data(attrname, old, new):
             sampling = np.random.choice(s, no_samples[i].value)
 
             mean_array[i] = (mean(sampling))
-            sem_array[i] = (stdev(sampling))
+            sem_array[i] = (stdev(sampling)/sqrt(N_array[i]))
             N_array[i] = no_samples[i].value
 
             x[i] = ([i + 1, i + 1])
