@@ -14,7 +14,9 @@ from math import sqrt
 import numpy as np
 from statistics import mean, stdev
 from bokeh.io import curdoc
-from bokeh.layouts import row, widgetbox
+from bokeh.layouts import row
+#from bokeh.layouts import WidgetBox
+from bokeh.layouts import column
 from bokeh.models import ColumnDataSource
 from bokeh.models.widgets import Slider, TextInput
 from bokeh.plotting import figure
@@ -84,7 +86,7 @@ print(y)
 
 
 # Set up plot
-plot = figure(plot_height=400, plot_width=400, title="Sampling from one population with normal distribution",
+plot = figure(height=400, width=400, title="Sampling from one population with normal distribution",
               tools="crosshair,pan,reset,save,wheel_zoom",
               x_range=[0, 6], y_range=[0, max(s)])
 
@@ -173,7 +175,8 @@ for w in no_samples:
 
 
 # Set up layouts and add to document
-inputs = widgetbox(text, no_samples[0], no_samples[1], no_samples[2], no_samples[3], no_samples[4])
+#inputs = widgetbox(text, no_samples[0], no_samples[1], no_samples[2], no_samples[3], no_samples[4])
+inputs = column(text, no_samples[0], no_samples[1], no_samples[2], no_samples[3], no_samples[4])
 
 curdoc().clear()
 curdoc().add_root(row(inputs, plot, width=800))
