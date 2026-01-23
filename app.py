@@ -103,7 +103,7 @@ plot.renderers.extend([hline])
 
 
 # Set up widgets
-text = TextInput(title="title", value='number of samples')
+text = TextInput(title="write number of samples", value='')
 no_samples = []
 for i in range(5):
     no_samples.append(Slider(title="measurements " + str(i+1), value=3, start=2, end=100, step=1))
