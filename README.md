@@ -4,7 +4,7 @@ An interactive web app for teaching how sample size affects statistical signific
 
 ##  What it does
 
-This tool demonstrates a key concept in statistics: **when you sample from the same population, you shouldn't find significant differences between groups** — any difference is just random chance.
+This tool demonstrates a key concept in statistics: **when you sample from the same population, you shouldn't find significant differences between groups** - any difference is just random chance.
 
 The app lets you:
 - Draw random samples from a normal distribution (μ=2, σ=1)
