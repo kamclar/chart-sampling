@@ -259,4 +259,4 @@ layout = row(controls, plot, sizing_mode="fixed")
 
 curdoc().clear()
 curdoc().add_root(layout)
-curdoc().title = "📊 Statistical Sampling Explorer"
+curdoc().title = " Statistical Sampling Explorer"
