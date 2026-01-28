@@ -25,9 +25,9 @@ The app compares samples 1-4 against sample 5 using:
 Markers appear when p < 0.05 (significant difference detected).
 
 
-1. **Small samples = unstable results** — With n=2-5, you'll see lots of variability and false positives
-2. **Large samples = reliable results** — With n=50+, means converge to the population mean
-3. **Error bars shrink** — SEM decreases as sample size increases (SEM = SD/√n)
+1. **Small samples = unstable results** - With n=2-5, you'll see lots of variability and false positives
+2. **Large samples = reliable results** - With n=50+, means converge to the population mean
+3. **Error bars shrink** - SEM decreases as sample size increases (SEM = SD/√n)
 
 ## Demo
 
