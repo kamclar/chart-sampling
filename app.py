@@ -3,16 +3,16 @@ Interactive Statistical Sampling Explorer
 Visualize how sample size affects statistical significance
 """
 
-from scipy import stats
-from math import sqrt
 import numpy as np
-from statistics import mean, stdev
+from math import sqrt
+from scipy import stats
 from bokeh.io import curdoc
-from bokeh.layouts import row, column
-from bokeh.models import ColumnDataSource, Div, Span, Legend
-from bokeh.models.widgets import Slider, TextInput, Select
 from bokeh.plotting import figure
+from statistics import mean, stdev
+from bokeh.layouts import row, column
 from bokeh.palettes import Spectral6, Category10
+from bokeh.models.widgets import Slider, TextInput, Select
+from bokeh.models import ColumnDataSource, Div, Span, Legend
 
 # ============== CONFIGURATION ==============
 COLORS = {
